@@ -43,28 +43,25 @@ This project demonstrates prompt engineering, LLM output stabilization, and end-
 ### 5. Run the Application
        python app.py
 
-1.Prompt Engineering
 
-The input story is sent to an LLM (DeepSeek-V3.2) with a carefully designed prompt that instructs the model to:
 
-Decompose the story into narrative beats
+## How It Works
 
-Output a simple list of image generation prompts
+### Prompt Engineering
 
-Step 2: Output Extraction & Validation
+     The application sends the input story to the **DeepSeek-V3.2** language model using a carefully designed prompt.  
+     The prompt instructs the model to deconstruct the narrative into key visual moments and output them as a simple, structured list of image-generation prompts.
+     
+     The model is explicitly guided to return only a minimal structure to improve reliability:
+     json
+     [
+       { "prompt": "A child opens a glowing box in a dark room..." },
+       { "prompt": "Light floods the room as magic spills out..." }
+     ]
 
-Instead of enforcing rigid JSON schemas, the system:
+### Image Generation
 
-Extracts only the structured list using regex
+     Each prompt is sent to Stable Diffusion XL via the Hugging Face Inference API.
+     Generated images are stored locally and returned to the frontend.
 
-Converts it into Python-native objects
-
-Validates required keys (prompt)
-
-This approach significantly improves reliability in real-world LLM usage.
-
-Step 3: Image Generation
-
-Each prompt is sent to Stable Diffusion XL (SDXL) via the Hugging Face Inference API.
-Generated images are stored locally and returned to the frontend.
 
