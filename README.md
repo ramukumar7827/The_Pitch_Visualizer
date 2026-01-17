@@ -1,7 +1,7 @@
 # Pitch Visualizer
 
 Pitch Visualizer is an AI-powered web application that converts a short narrative story into a multi-panel visual storyboard.  
-It intelligently breaks a story into key moments, generates detailed image prompts using a Large Language Model (LLM), and renders corresponding images using a text-to-image diffusion model.
+It breaks a story into key moments, generates detailed image prompts using a Large Language Model (LLM), and renders corresponding images using a text-to-image diffusion model.
 
 This project demonstrates prompt engineering, LLM output stabilization, and end-to-end AI system integration using Flask and Hugging Face models.
 
