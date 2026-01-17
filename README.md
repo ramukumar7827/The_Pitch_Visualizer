@@ -25,7 +25,6 @@ This project demonstrates prompt engineering, LLM output stabilization, and end-
 - Hugging Face Inference API
 - HTML
 - Bootstrap
-- jQuery
 
 ### AI Models
 - DeepSeek-V3.2 – prompt generation
