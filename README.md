@@ -54,7 +54,7 @@ Decompose the story into narrative beats
 
 Output a simple list of image generation prompts
 
-Step 3: Output Extraction & Validation
+Step 2: Output Extraction & Validation
 
 Instead of enforcing rigid JSON schemas, the system:
 
@@ -66,7 +66,7 @@ Validates required keys (prompt)
 
 This approach significantly improves reliability in real-world LLM usage.
 
-Step 2: Image Generation
+Step 3: Image Generation
 
 Each prompt is sent to Stable Diffusion XL (SDXL) via the Hugging Face Inference API.
 Generated images are stored locally and returned to the frontend.
