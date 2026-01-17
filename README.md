@@ -19,8 +19,6 @@ This project demonstrates prompt engineering, LLM output stabilization, and end-
 ---
 
 ## Tech Stack
-
-### Backend
 - Python
 - Flask
 - LangChain
